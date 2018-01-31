@@ -69,6 +69,7 @@ namespace NeuralNetworkCSharp.Neuron
         {
             var synapse = new Synapse(this, outputNeuron);
             Outputs.Add(synapse);
+            outputNeuron.Inputs.Add(synapse);
         }
 
         /// <summary>
